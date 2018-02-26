@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Upload</title>
+</head>
+<body>
+
+<center>
+	<h2> Welcome {{username}}</h2>
+	<h1>Krutika Kulkarni</h1><br>
+    <h1> 1001387529</h1>
+	<h3> Upload your Images </h3>
+	<img src="seir(1).jpg" width="500" height="600" align="right">
+	<form action="/upload" method="post" enctype="multipart/form-data">
+					<center>
+						<input type="file" name="file"/>
+						<br><br>
+						Likes <select name="likes">
+							<option value="1">1</option>
+							<option value="2">2</option>
+							<option value="3">3</option>
+							<option value="4">4</option>
+							<option value="5">5</option>
+						</select>
+						<br><br>
+						<input type="submit" value="Upload"/>
+					</center>
+</form>
+</center>
+	<center>
+		<h3><a href='listPhotos'>View Your Images</a></h3>
+	</center>
+	<br>
+	<br>
+	<center>
+		<h3><a href='all_list'>View All Images</a></h3>
+	</center>
+<br>
+<br>
+<center>
+	<input type ="submit" value="logout"/>
+</center>
+
+</body>
+</html>

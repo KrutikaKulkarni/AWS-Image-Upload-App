@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Album</title>
+</head>
+<body>
+<h2> Gallery</h2>
+<h3> Here's Your Photo album {{username}}</h3>
+<table width="75%">
+           <form method="GET">
+               {% for image in images%}
+               <ul>
+                   <li> Username : {{image[0]}}</li><br>
+                   <li> Title: {{image[1]}}</li><br>
+                   <li> Picture time : {{image[2]}}</li>
+                   <br>
+               </ul>
+               <% endfor %>
+           </form>
+
+
+</table>
+</body>
+</html>
